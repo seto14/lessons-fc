@@ -1,0 +1,139 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-size: 22px;
+	color: #222222;
+	margin: 50px 50px;
+}
+
+h1 {
+	color: #3d0004;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.color-orange {
+	color: orange;
+}
+
+header {
+	.main {
+		display: flex;
+		align-items: center;
+		&__info {
+			li {
+				text-transform: uppercase;
+				a {
+					color: #009b8d;
+					text-decoration: none;
+				}
+			}
+		}
+		&__logo {
+			width: 200px;
+			margin-left: 70px;
+		}
+	}
+}
+.fishing {
+	&__header h2 {
+		color: black;
+	}
+	&__text > p {
+		color: #01622d;
+	}
+	&__text .lesson {
+		color: #222222;
+	}
+	&__text + p {
+		color: #620309;
+	}
+
+	&__img {
+		width: 55%;
+		margin-bottom: 30px;
+	}
+	&__go-top {
+		a {
+			color: #009b8d;
+			padding-right: 15px;
+		}
+	}
+}
+
+.habitat {
+	&__info {
+	}
+	&__cart {
+	}
+	&__header h2 {
+		color: black;
+	}
+	&__text > p {
+		color: #01622d;
+	}
+	&__text .lesson {
+		color: #222222;
+	}
+	&__text + p {
+		color: #620309;
+	}
+
+	&__img {
+		margin-bottom: 30px;
+		img {
+			width: 55%;
+		}
+	}
+	&__go-top {
+		padding-right: 15px;
+		a {
+			color: #009b8d;
+			padding-right: 15px;
+		}
+	}
+}
+
+.tips {
+	&__info {
+	}
+	&__cart {
+	}
+	&__header h2 {
+		color: black;
+	}
+
+	&__text.lesson {
+		color: #3d0004;
+		span {
+			color: #01622d;
+		}
+	}
+	&__text ~ p {
+		color: #000000;
+	}
+	&__img {
+		margin-bottom: 30px;
+		img {
+			width: 55%;
+		}
+	}
+	&__go-top {
+		padding-right: 15px;
+		a {
+			color: #009b8d;
+			padding-right: 15px;
+		}
+	}
+}
+footer {
+	margin-top: 30px;
+	p {
+		font-size: 18px;
+	}
+}
