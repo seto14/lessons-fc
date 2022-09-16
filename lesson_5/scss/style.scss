@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&display=swap");
+
+@font-face {
+	font-family: "Verdana";
+	src: url("../fonts/Verdana/Verdana.woff2") format("woff2"), url("../fonts/Verdana/Verdana.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Verdana";
+	src: url("../fonts/Verdana/Verdana-Bold.woff2") format("woff2"),
+		url("../fonts/Verdana/Verdana-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+body {
+	font-family: "Verdana", sans-serif;
+	color: #373737;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Montserrat", sans-serif;
+}
+
+a {
+	color: #0069ff;
+}
+
+a:hover {
+	color: red;
+}
+p {
+	line-height: 1.4em;
+}
+
+header {
+	padding: 0 5%;
+	margin-top: 30px;
+	div {
+		margin: 0 0 20px 0;
+		h1 {
+			font-size: 42px;
+			font-weight: 600;
+			line-height: 1.2;
+			color: rgb(3, 27, 78);
+			padding-bottom: 10px;
+		}
+		li {
+			margin-left: 20px;
+			list-style: upper-latin;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: 700;
+			padding-bottom: 10px;
+			&:first-child a {
+				text-decoration: underline solid rgba(77, 91, 124, 0.6) 1px;
+				color: rgba(77, 91, 124, 0.5);
+			}
+			&:first-child a:hover {
+				color: #0069ff;
+			}
+			a {
+				color: #373737;
+			}
+			a:hover {
+				color: #0069ff;
+			}
+		}
+		p {
+			color: rgb(0, 105, 255);
+		}
+	}
+}
+
+main {
+	.img {
+		padding: 0 5%;
+		display: flex;
+		align-items: center;
+		img {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 75%;
+			margin-bottom: 20px;
+		}
+	}
+	.img-after {
+		padding: 0 5%;
+		text-align: left;
+		font-size: 10px;
+	}
+}
+
+.about {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	h3 {
+		font-size: 26px;
+		font-weight: 700;
+		color: #4d5b7c;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	h4 {
+		font-size: 22px;
+		font-weight: 700;
+		text-shadow: 2px 2px 5px rgba(57, 61, 149, 0.5);
+		color: #4d5b7c;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.indent {
+		text-indent: 20px;
+		margin-bottom: 20px;
+		color: #4d5b7c;
+	}
+
+	p {
+		margin-bottom: 20px;
+		color: #4d5b7c;
+	}
+
+	mark {
+		background-color: #e3e8f4;
+		padding: 2px;
+	}
+	ul {
+		padding-left: 19px;
+		li {
+			list-style: square;
+			padding-bottom: 10px;
+			line-height: 1.5em;
+			color: rgba(77, 90, 122);
+		}
+	}
+	ul li::before {
+		content: "\200B";
+	}
+	&__font-face {
+		padding: 2% 5%;
+	}
+	&__align-text {
+		padding: 2% 5%;
+		background-color: #8aabf8;
+		margin-bottom: 30px;
+		.left {
+			text-align: left;
+		}
+		.right {
+			text-align: right;
+		}
+		.center {
+			text-align: center;
+		}
+		span {
+			background-color: #373737;
+			padding: 2px;
+			color: #e3e8f4;
+		}
+	}
+	&__align-text p:last-child {
+		margin-bottom: 0;
+		h3 {
+			font-style: italic;
+		}
+	}
+	&__style-elements {
+		padding: 0 5%;
+		.style {
+			padding-left: 10px;
+			li:before {
+				content: "✓";
+			}
+			li {
+				list-style: none;
+			}
+			li:first-child {
+				text-decoration: line-through;
+			}
+			li:nth-child(2) {
+				text-decoration: overline red;
+			}
+			li:nth-child(3) {
+				text-decoration: underline #0069ff;
+			}
+			li:nth-child(4) {
+				text-decoration: none;
+			}
+		}
+		.elements {
+			padding-left: 10px;
+			li:before {
+				content: "✓";
+			}
+			li {
+				list-style: none;
+			}
+			li:first-child {
+				text-transform: capitalize;
+			}
+			li:nth-child(2) {
+				text-transform: lowercase;
+			}
+			li:nth-child(3) {
+				text-transform: uppercase;
+			}
+			li:nth-child(4) {
+				text-transform: none;
+			}
+		}
+		.spacing {
+			word-spacing: 20px;
+			padding-left: 10px;
+			li:before {
+				content: "✓✓";
+			}
+			li {
+				list-style: none;
+			}
+		}
+	}
+}
+footer {
+	.footer__info {
+		padding: 0 5%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	hr {
+		border-top: 2px solid #4d5b7c;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	p {
+		font-weight: 700;
+		font-size: 14px;
+	}
+	a:hover {
+		color: #373737;
+	}
+}
