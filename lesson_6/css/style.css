@@ -71,13 +71,12 @@ header h1 {
 .block {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  justify-content: space-between;
   margin-bottom: 24px;
 }
 .block__column {
   border-radius: 4px;
   background-color: #ffffff;
-  margin: 0 auto;
 }
 .block__img img {
   width: 100%;
