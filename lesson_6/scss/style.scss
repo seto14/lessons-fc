@@ -73,12 +73,11 @@ header {
 .block {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 auto;
+	justify-content: space-between;
 	margin-bottom: 24px;
 	&__column {
 		border-radius: 4px;
-		background-color: #ffffff;
-		margin: 0 auto;
+		background-color: #ffffff;		
 	}
 	&__img {
 		img {
