@@ -50,6 +50,9 @@ header {
 		line-height: 160%;
 		margin-bottom: 24px;
 	}
+	&__text:last-child {
+		margin-bottom: 0px;
+	}
 	&__quotes {
 		display: block;
 		padding-left: 60px;
@@ -69,6 +72,9 @@ header {
 			padding-left: 34px;
 			margin-bottom: 4px;
 			line-height: 160%;
+		}
+		li:last-child {
+			margin-bottom: 0px;
 		}
 	}
 }
