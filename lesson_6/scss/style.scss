@@ -79,7 +79,7 @@ header {
 	justify-content: space-between;
 	margin-bottom: 24px;
 	&__column {
-		border-radius: 4px;
+		
 		background-color: #ffffff;
 		margin: 0 auto;
 	}
@@ -87,6 +87,7 @@ header {
 		img {
 			max-width: 100%;
 			min-width: 280px;
+			border-radius: 4px;
 		}
 	}
 }
