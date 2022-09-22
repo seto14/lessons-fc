@@ -89,7 +89,6 @@ header h1 {
 }
 
 .block__column {
-	border-radius: 4px;
 	background-color: #ffffff;
 	margin: 0 auto;
 }
@@ -97,6 +96,7 @@ header h1 {
 .block__img img {
 	max-width: 100%;
 	min-width: 280px;
+	border-radius: 4px;
 }
 
 .display {
