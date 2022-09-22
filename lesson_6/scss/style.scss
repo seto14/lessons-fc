@@ -37,7 +37,7 @@ header h1 {
 }
 
 .main__img img {
-	width: 100%;
+	max-width: 100%;
 	min-width: 280px;
 }
 
@@ -97,7 +97,8 @@ header h1 {
 }
 
 .block__img img {
-	width: 100%;
+	max-width: 100%;
+	min-width:280px;
 }
 
 .display {
