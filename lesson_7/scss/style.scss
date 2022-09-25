@@ -59,6 +59,7 @@ header {
 		display: block;
 		padding-left: 60px;
 		margin-bottom: 40px;
+		background: url(../img/icons/braces.png) 0 0 no-repeat;
 		p {
 			color: #1e212c;
 			font-size: 20px;
@@ -74,6 +75,8 @@ header {
 			padding-left: 34px;
 			margin-bottom: 4px;
 			line-height: 160%;
+			min-height: 34px; /*Лайфхак. Для надійності*/
+			background: url(../img/icons/check.png) 0 4px no-repeat;
 		}
 		li:last-child {
 			margin-bottom: 0px;
@@ -147,9 +150,3 @@ footer {
 			linear-gradient(55.95deg, rgba(179, 255, 58, 0.6) 0%, rgba(215, 247, 5, 0.92) 100%);
 	}
 }
-/*&__background-several {
-	height: 400px;
-	background: url("../img/image5.png") 30% 50%/10% no-repeat fixed,
-		url("../img/image5.png") 70% 50%/10% no-repeat fixed, url("../img/image4.png") 50% / cover no-repeat,
-		linear-gradient(55.95deg, rgba(179, 255, 58, 0.6) 0%, rgba(215, 247, 5, 0.92) 100%);
-}*/
