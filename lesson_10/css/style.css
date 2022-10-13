@@ -323,7 +323,7 @@ footer .footer__info a:hover {
 }
 .about__tab {
   display: inline-block;
-  min-width: 305px;
+  min-width: 300px;
   max-width: 100%;
   text-align: center;
   padding: 10px 0;
