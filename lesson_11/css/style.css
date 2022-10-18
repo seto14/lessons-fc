@@ -184,7 +184,7 @@ hr {
 .car__light-front {
 	max-width: 320px;
 	position: absolute;
-	bottom: 26px;
+	bottom: 23px;
 	left: 28px;
 	opacity: 0;
 	visibility: hidden;
