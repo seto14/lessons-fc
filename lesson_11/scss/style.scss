@@ -135,35 +135,41 @@ hr {
 	}
 
 	&__body {
-		max-width: 400px;
+		display: block;
+		background-image: url(../img/car.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 400px;
+		height: 150px;
 		position: absolute;
-		bottom: 63px;
+		bottom: 83px;
 		left: 255px;
-		img {
-			width: 100%;
-		}
 	}
 
 	&__wheel-front {
-		max-width: 63px;
+		display: block;
+		border-radius: 50%;
+		background-image: url(../img/wheelf.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 62px;
+		height: 62px;
 		position: absolute;
 		bottom: 46px;
 		left: 286px;
-
-		img {
-			width: 100%;
-		}
 	}
 
 	&__wheel-rear {
-		max-width: 63px;
+		display: block;
+		border-radius: 50%;
+		background-image: url(../img/wheelr.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 62px;
+		height: 62px;
 		position: absolute;
 		bottom: 48px;
 		left: 560px;
-
-		img {
-			width: 100%;
-		}
 	}
 
 	&__light-front {
@@ -200,13 +206,29 @@ hr {
 	visibility: visible;
 }
 .car:hover .car__wheel-front {
-	transform: rotate(-360deg);
-	transition: all 1.3s ease-in-out 0s;
+	animation-name: wheel;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;
+	animation-delay: 0s;
 }
 
 .car:hover .car__wheel-rear {
-	transform: rotate(-360deg);
-	transition: all 1.3s ease-in-out 0s;
+	animation-name: wheel;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;
+	animation-delay: 0s;
+}
+
+@keyframes wheel {
+	100% {
+		transform: rotate(-360deg);
+	}
 }
 
 footer {
