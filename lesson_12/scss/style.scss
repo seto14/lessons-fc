@@ -175,6 +175,7 @@ hr {
 		position: absolute;
 		bottom: 12px;
 		left: 368px;
+		z-index: 6;
 	}
 
 	&__wheel-rear {
@@ -188,6 +189,7 @@ hr {
 		position: absolute;
 		bottom: 13px;
 		left: 641px;
+		z-index: 6;
 	}
 
 	&__light-front {
@@ -198,7 +200,7 @@ hr {
 		left: 102px;
 		opacity: 0;
 		visibility: hidden;
-		z-index: 5;
+		z-index: 6;
 		img {
 			width: 100%;
 		}
@@ -212,7 +214,7 @@ hr {
 		left: 694px;
 		opacity: 0;
 		visibility: hidden;
-		z-index: 5;
+		z-index: 6;
 		img {
 			width: 100%;
 		}
