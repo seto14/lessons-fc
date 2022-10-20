@@ -191,6 +191,7 @@ hr {
 	left: 102px;
 	opacity: 0;
 	visibility: hidden;
+	z-index: 5;
 }
 
 .car__light-front img {
@@ -205,6 +206,7 @@ hr {
 	left: 694px;
 	opacity: 0;
 	visibility: hidden;
+	z-index: 5;
 }
 
 .car__light-rear img {
