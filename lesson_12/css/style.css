@@ -201,8 +201,8 @@ hr {
 }
 
 .car:hover .car__bg {
-  -webkit-animation: bg-animation 45s linear infinite;
-          animation: bg-animation 45s linear infinite;
+  -webkit-animation: bg-animation 15s linear infinite;
+          animation: bg-animation 15s linear infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
