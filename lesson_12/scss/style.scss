@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+body {
+	font-family: "Lato", sans-serif;
+	color: #424551;
+}
+.wraper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+	padding: 50px;
+}
+hr {
+	border: 0;
+	border-top: 1px solid #1e212c;
+	margin-bottom: 50px;
+}
+
+[class*="__container"] {
+	max-width: 1270px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 80px;
+	background-color: #f2f2f2;
+	margin-bottom: 60px;
+	position: relative;
+	height: 100%;
+}
+.header {
+	h2 {
+		margin-bottom: 10px;
+		color: #1e212c;
+		font-size: 26px;
+		font-weight: 700;
+	}
+}
+
+.transform {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	&__text {
+		color: #f2f2f2;
+		font-weight: 700;
+		line-height: 1.2;
+		padding: 20px;
+
+		text-align: center;
+	}
+	&__body {
+		width: 200px;
+		height: 200px;
+		background-color: rgba(155, 92, 34, 0.8);
+		margin: 15px;
+	}
+	&__item {
+		width: 200px;
+		height: 200px;
+		background-color: #7a956b;
+	}
+
+	&__item--translate {
+		&:hover {
+			transform: translate(20px, 20px);
+		}
+	}
+
+	&__item--scale {
+		&:hover {
+			transform: scale(0.8);
+		}
+	}
+
+	&__item--rotate {
+		&:hover {
+			transform: rotate(10deg);
+		}
+	}
+
+	&__item--skew {
+		&:hover {
+			transform: skew(10deg, 0deg);
+		}
+	}
+
+	&__item--multiple {
+		&:hover {
+			transform: translate(5%, 5%) scale(0.9) rotate(20deg) skew(10deg, 10deg);
+		}
+	}
+
+	&__body--origin {
+		perspective: 200px;
+		perspective-origin: center;
+	}
+	&__item--origin {
+		&:hover {
+			transform-origin: 0 0;
+			transform: rotate(20deg);
+		}
+	}
+	&__item--perspective {
+		&:hover {
+			transform: rotateX(50deg);
+		}
+	}
+	&__item--multiple3d {
+		&:hover {
+			transform: translate3d(10px, 20px, 10px) scale3d(1, 1, 1) rotate3d(1, 1, 1, 12deg);
+		}
+	}
+
+	&__body--perspective3d {
+		perspective: 200px;
+		transform-style: preserve-3d;
+	}
+
+	&__item--perspective3d {
+		transform: rotateY(0deg);
+		transition: all 0.3s ease 0s;
+		&:hover {
+			transform: rotateY(180deg);
+		}
+	}
+}
+
+.car {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 60px;
+	&__bg {
+		background: url(../img/bg.jpg) left 0 bottom 0 / cover repeat-x;
+		width: 100%;
+		height: 400px;
+	}
+
+	&__body {
+		display: block;
+		background-image: url(../img/car.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 400px;
+		height: 150px;
+		position: absolute;
+		bottom: 48px;
+		left: 335px;
+		z-index: 3;
+	}
+
+	&__cat {
+		display: block;
+		background-image: url(../img/cat.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 55px;
+		height: 55px;
+		position: absolute;
+		bottom: 110px;
+		transition: all 0.3s ease 0s;
+		left: 545px;
+		z-index: 4;
+	}
+
+	&__wheel-front {
+		display: block;
+		border-radius: 50%;
+		background-image: url(../img/wheelf.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		bottom: 12px;
+		left: 368px;
+	}
+
+	&__wheel-rear {
+		display: block;
+		border-radius: 50%;
+		background-image: url(../img/wheelr.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		bottom: 13px;
+		left: 641px;
+	}
+
+	&__light-front {
+		display: block;
+		max-width: 320px;
+		position: absolute;
+		bottom: -15px;
+		left: 102px;
+		opacity: 0;
+		visibility: hidden;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__light-rear {
+		display: block;
+		max-width: 63px;
+		position: absolute;
+		bottom: 53px;
+		left: 694px;
+		opacity: 0;
+		visibility: hidden;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__bat {
+		display: block;
+		background-image: url(../img/bat.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 280px;
+		height: 280px;
+		position: absolute;
+		right: 230px;
+		top: -15px;
+		transform: rotate(30deg);
+		transform: translate(68%, 0);
+		transition: all 10s ease 0s;
+	}
+}
+
+.car:hover .car__bg {
+	animation: bg-animation 45s linear infinite;
+	animation-direction: alternate;
+}
+.car:hover .car__cat {
+	transform: translate(40px, 0px);
+}
+
+.car:hover .car__cat::before {
+	content: "GOgo";
+	position: absolute;
+	left: -50px;
+	top: 10px;
+	transform: rotate(20deg);
+}
+.car:hover .car__light-rear {
+	opacity: 1;
+	visibility: visible;
+}
+.car:hover .car__light-front {
+	opacity: 1;
+	visibility: visible;
+}
+.car:hover .car__wheel-front {
+	animation-name: wheel;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;
+	animation-delay: 0s;
+}
+
+.car:hover .car__wheel-rear {
+	animation-name: wheel;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-play-state: running;
+	animation-delay: 0s;
+}
+
+.car:hover .car__bat {
+	transform: rotate(20deg) translate(0, 20px);
+}
+
+@keyframes wheel {
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes bg-animation {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 500px 0;
+	}
+}
+
+footer {
+	.footer {
+		&__info {
+			padding: 0 5%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p {
+				font-weight: 700;
+				font-size: 14px;
+			}
+			a:hover {
+				color: #150460;
+			}
+		}
+	}
+}
