@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.wraper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  padding: 50px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #1e212c;
+  margin-bottom: 50px;
+}
+
+[class*=__container] {
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 80px;
+  background-color: #f2f2f2;
+  margin-bottom: 60px;
+  position: relative;
+  height: 100%;
+}
+
+.header h2 {
+  margin-bottom: 10px;
+  color: #1e212c;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.space {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 60px;
+}
+.space__bg {
+  background: url(../img/gifs/space.gif) left 0 center/cover no-repeat;
+  width: 105%;
+  height: 90vh;
+  /**/
+}
+.space__bg:hover {
+  background: url(../img/space.jpg) left 0 center/cover no-repeat;
+  transition: all 0.5s linear 0.1s;
+  /*animation: chenge-bg 10s linear 1 normal running 1s forwards;*/
+}
+.space__bg:hover .alian {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s linear 1s;
+}
+.space__bg:hover .space__body {
+  width: 450px;
+  height: 180px;
+  transition: all 0.5s linear 0.1s;
+  transform: rotate(-4deg);
+  /*	.body {
+  	&__fire-left {
+  		width: 14px;
+  		transition: all 0s ease 0.2s;
+  	}
+  	&__fire-right {
+  		right: 26px;
+  		bottom: 61px;
+  		width: 16px;
+  		transition: all 0.2s linear 0.1s;
+  	}
+  	&__fire-center {
+  		right: 86px;
+  		bottom: 78px;
+  		width: 30px;
+  		transition: all 0s linear 0.1s;
+  	}
+  }*/
+}
+.space__body {
+  display: block;
+  background-image: url(../img/ship.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 160px;
+  position: absolute;
+  bottom: 80px;
+  right: 8%;
+  z-index: 3;
+  transition: all 1s linear 1s;
+}
+.space .body__fire-left {
+  position: absolute;
+  left: 13.5%;
+  bottom: 33%;
+  width: 12px;
+  height: 1px;
+  background-color: rgba(221, 90, 255, 0.8);
+  border-radius: 50px 50px 10px 10px;
+  border: 1px solid rgbа(250, 232, 142, 0, 9);
+  box-shadow: 2px 15px 15px 10px rgba(80, 138, 255, 0.6705882353);
+  animation: blink-animation 0.1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.1s steps(5, start) infinite;
+  opacity: 1;
+}
+.space .body__fire-right {
+  position: absolute;
+  right: 6%;
+  bottom: 34%;
+  width: 18px;
+  height: 1px;
+  background-color: rgba(221, 90, 255, 0.6);
+  border-radius: 50px 50px 10px 10px;
+  border: 1px solid rgbа(250, 232, 142, 0, 9);
+  box-shadow: 2px 15px 15px 10px rgba(80, 138, 255, 0.6705882353);
+  animation: blink-animation 0.1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.1s steps(5, start) infinite;
+  opacity: 1;
+}
+.space .body__fire-center {
+  position: absolute;
+  right: 19.5%;
+  bottom: 44%;
+  width: 28px;
+  height: 2px;
+  background-color: rgba(221, 90, 255, 0.6);
+  border-radius: 50px 50px 10px 10px;
+  border: 1px solid rgbа(250, 232, 142, 0, 9);
+  box-shadow: 2px 15px 15px 10px rgba(80, 138, 255, 0.6705882353);
+  animation: blink-animation 0.1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.1s steps(5, start) infinite;
+  opacity: 1;
+}
+
+.space .alian {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  display: block;
+  background-image: url(../img/frame.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 450px;
+  height: 185px;
+  opacity: 0;
+  visibility: hidden;
+}
+.space .alian__text {
+  display: inline-block;
+  position: absolute;
+  top: 27px;
+  left: 125px;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+.space .alian__text p {
+  -webkit-animation: title 1s ease forwards 3.5s;
+          animation: title 1s ease forwards 3.5s;
+  transform: translate(0px, 50%);
+  opacity: 0;
+}
+.space .alian__text p:not(:last-child) {
+  margin-bottom: 5px;
+}
+.space .alian__title {
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #a1a10d;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.space .alian__img {
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 14px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+  background: url(../img/prawn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(207, 98, 21, 0.819);
+}
+
+.space__brig {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  display: block;
+  padding: 10px;
+  border: 2px solid rgba(207, 98, 21, 0.819);
+  border-radius: 50%;
+}
+.space__inner {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(207, 98, 21, 0.819);
+  -webkit-animation: rotate 5s linear infinite;
+          animation: rotate 5s linear infinite;
+}
+
+footer .footer__info {
+  padding: 0 5% 3% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer__info p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5px;
+}
+footer .footer__info a:hover {
+  color: #150460;
+}
+
+/*--Animation--*/
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: 0px 0;
+  }
+  100% {
+    background-position: 550px 0;
+  }
+}
+@keyframes bg-animation {
+  0% {
+    background-position: 0px 0;
+  }
+  100% {
+    background-position: 550px 0;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes title {
+  100% {
+    transform: translate(0px, 0%);
+    opacity: 1;
+  }
+}
+@keyframes title {
+  100% {
+    transform: translate(0px, 0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
