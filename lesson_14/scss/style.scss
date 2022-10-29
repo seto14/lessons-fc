@@ -33,15 +33,11 @@ hr {
 	margin-bottom: 30px;
 }
 
-/*.section {
-	padding: 40px 80px;
-	background-color: #f2f2f2;
-	margin-bottom: 60px;
-	position: relative;
-	height: 100%;
-}*/
+
 .header {
-	padding: 20px;
+		&__container {
+		padding: 20px 0;
+	}
 	h2 {
 		color: #1e212c;
 		font-size: 26px;
