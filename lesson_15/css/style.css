@@ -227,7 +227,7 @@ hr {
 }
 .why-block .body-why__content {
   flex: 0 1 43%;
-  max-width: 390px;
+  max-width: 400px;
   padding-left: 20px;
 }
 .why-block .body-why__description {
