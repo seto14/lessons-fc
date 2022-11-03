@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 16</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wraper" id="up">
+		<header class="header">
+		</header>
+
+		<main class="page">
+			<section class="contatct-form">
+				<div class="contatct-form__container">
+
+					<div class="contatct-form__body body-form">
+
+						<div class="body-form__madia">
+							<img class="body-form__image" src="img/form-img.svg" alt="Form img">
+						</div>
+
+						<div class="body-form__content">
+							<div class="body-form__description description">ANY QUESTIONS?</div>
+							<h2 class="body-form__title title">Drop us a line</h2>
+
+							<form class="body-form__form form" method="POST" enctype="multipart/form-data" action="#">
+								<div class="form__line">
+									<label for="first-name" class="form__label">First Name*</label>
+									<input id="first-name" required autocomplete="off" type="text" name="first-name"
+										placeholder="Your first name" class="form__input">
+								</div>
+								<div class="form__line">
+									<label for="last-name" class="form__label">Last Name*</label>
+									<input id="last-name" required autocomplete="off" type="text" name="last-name"
+										placeholder="Your last name" class="form__input">
+								</div>
+								<div class="form__line">
+									<label for="email" class="form__label">Email*</label>
+									<input id="email" required autocomplete="off" type="email" name="email"
+										placeholder="Your working email" class="form__input">
+								</div>
+								<div class="form__line">
+									<label for="phone" class="form__label">Phone</label>
+									<input id="phone" autocomplete="off" type="tel" name="phone" placeholder="Your phone number"
+										class="form__input">
+								</div>
+
+								<div class="form__line">
+									<label for="user-text" class="form__label">Message*</label>
+									<textarea id="user-text" required autocomplete="off" placeholder="Your message"
+										name="message" class="form__textarea"></textarea>
+								</div>
+
+								<div class="form__line radio">
+									<div class="radio__title">Send SMS*</div>
+									<div class="radio__radio">
+										<input checked class="radio__input " id="yes" required autocomplete="off" value="yes"
+											name="sms" type="radio">
+										<label class="radio__label" for="yes">Yes</label>
+									</div>
+									<div class="radio__radio">
+										<input class="radio__input " id="no" required autocomplete="off" name="sms" value="no"
+											type="radio">
+										<label class="radio__label" for="no">NO</label>
+									</div>
+								</div>
+
+
+
+
+
+
+								<div class="form__line checkbox">
+									<input id="user-agree" required type="checkbox" name="user-agree" class="checkbox__input">
+									<label for="user-agree" class="checkbox__label"><span class="checkbox__text">I agree to
+											receive communications from Createx Online School</span></label>
+								</div>
+
+								<div class="form__line">
+									<button type="submit" class="form__button button"><span>Send message</span></button>
+
+								</div>
+
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer>
+			<hr>
+			<div class="footer">
+				<div class="footer__container">
+					<div class="footer__info">
+						<div>
+							<p>@How To Style HTML </p>
+						</div>
+						<div>
+							<a href="#up">GO UP^</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>
