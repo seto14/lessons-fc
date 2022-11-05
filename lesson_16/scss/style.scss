@@ -104,6 +104,7 @@ hr {
 	align-items: center;
 	row-gap: 25px;
 	column-gap: 35px;
+	justify-content: space-between;
 	&__line {
 		flex: 0 1 340px;
 		&:nth-child(5) {
