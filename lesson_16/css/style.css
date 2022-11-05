@@ -90,7 +90,6 @@ hr {
 }
 .form__line {
   flex: 0 1 340px;
-  flex: 0 1 340px;
 }
 .form__line:nth-child(5) {
   flex: 0 1 100%;
