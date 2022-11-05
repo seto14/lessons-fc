@@ -83,6 +83,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   row-gap: 25px;
   -moz-column-gap: 35px;
        column-gap: 35px;
@@ -138,10 +139,7 @@ hr {
   opacity: 0;
 }
 
-/*.checkbox__input:focus + .checkbox__label::before {
-	background-color: #ff3f3a;
 
-}*/
 .checkbox__input:checked + .checkbox__label::before {
   background: #ff3f3a url(../img/icons/check.svg) center/70% no-repeat;
 }
