@@ -1,0 +1,162 @@
+@media (max-width: 1199.98px) {
+	.form {
+		&__line {
+			flex: 0 1 47%;
+		}
+		&__line--textarea {
+			flex: 0 1 100%;
+		}
+		&__line.radio {
+			flex: 0 1 100%;
+		}
+	}
+}
+@media (max-width: 990.98px) {
+	.header__container {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.main-block__body {
+		flex-direction: column;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.body-main {
+		flex-direction: column;
+	}
+
+	.body-main__content {
+		padding-right: 0px;
+		margin-bottom: 40px;
+	}
+
+	.body-main__image {
+		max-width: 100%;
+		transform: translate(0px, 0px);
+	}
+	.body-main__actions {
+		justify-content: center;
+	}
+	.body-main__title:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.advantages-main {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.why-block {
+		padding: 80px 0 80px 0;
+	}
+	.why-block .body-why {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.why-block .body-why__madia {
+		flex: 0 1 100%;
+	}
+	.why-block .body-why__content {
+		flex: 0 1 100%;
+		max-width: 100%;
+		padding-left: 0px;
+		margin-bottom: 40px;
+	}
+
+	.form {
+		gap: 20px;
+	}
+
+	.form {
+		&__line.checkbox {
+			flex: 0 1 100%;
+		}
+	}
+
+	.contatct-form .body-form {
+		justify-content: center;
+	}
+	.contatct-form .body-form__madia {
+		display: none;
+	}
+
+	.contatct-form .body-form__content {
+		padding-left: 0px;
+	}
+	.main-block {
+		padding: 80px 0 80px 0;
+	}
+	.contatct-form {
+		padding: 0 0 80px 0;
+	}
+}
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		max-width: none;
+	}
+
+	.header {
+		position: static;
+	}
+
+	.form {
+		&__line {
+			flex: 0 1 100%;
+		}
+	}
+}
+
+@media (max-width: 639.98px) {
+	.menu__list {
+		justify-content: center;
+		column-gap: 20px;
+	}
+	.body-main__title {
+		font-size: 42px;
+	}
+	.advantages-main__circle {
+		display: none;
+	}
+	.contatct-form .body-form__content {
+		flex: 0 1 100%;
+	}
+}
+
+@media (max-width: 479.98px) {
+	.main-block {
+		padding: 40px 0 40px 0;
+	}
+
+	.actions-block {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+	}
+	.actions-header {
+		flex-direction: column-reverse;
+		justify-content: center;
+		row-gap: 20px;
+		width: 100%;
+	}
+	.button,
+	.button--border {
+		width: 100%;
+		text-align: center;
+	}
+	.body-main__title {
+		font-size: 32px;
+	}
+	.body-main__actions {
+		flex-direction: column;
+	}
+	.advantages-main {
+		gap: 5;
+	}
+	.why-block {
+		padding: 40px 0 40px 0;
+	}
+	.contatct-form {
+		padding: 0 0 40px 0;
+	}
+}
