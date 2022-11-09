@@ -92,7 +92,6 @@
 @media (max-width: 639.98px) {
   .menu__list {
     justify-content: center;
-    -moz-column-gap: 20px;
          column-gap: 20px;
   }
   .body-main__title {
