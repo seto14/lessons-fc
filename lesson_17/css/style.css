@@ -91,14 +91,12 @@ hr {
   background: #ff3f3a;
   opacity: 0.12;
   transform: scale(1.6);
-  -webkit-animation: play-circle 2s infinite ease;
           animation: play-circle 2s infinite ease;
 }
 .body-main__play:not(:last-child) {
   margin-bottom: 40px;
 }
 .body-main__play:hover::after {
-  -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
 .body-main__play:hover::before {
@@ -463,16 +461,6 @@ footer .footer__info p {
 }
 footer .footer__info a:hover {
   color: #150460;
-}
-
-@-webkit-keyframes play-circle {
-  0% {
-    transform: scale(1.6);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(3);
-  }
 }
 
 @keyframes play-circle {
