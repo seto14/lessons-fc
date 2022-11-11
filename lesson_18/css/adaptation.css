@@ -59,6 +59,7 @@
   .why-block .body-why {
     grid-template-columns: 1fr;
     align-items: center;
+    gap: 40px;
   }
   .why-block .body-why__madia {
     justify-self: center;
