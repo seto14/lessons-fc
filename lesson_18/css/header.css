@@ -21,7 +21,6 @@
 .menu__list {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 40px;
        column-gap: 40px;
   row-gap: 10px;
 }
